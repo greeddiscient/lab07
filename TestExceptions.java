@@ -1,22 +1,27 @@
 public class TestExceptions {
 
 	public static void main (String [ ] args) {
-		________________ ;
+		Object[] k= new String[5] ;
+		Object obj = new Integer(100);
 
+		
 		try {
-			________________ ;
+			 k[3].toString();
+			 
+				 
 
 		} catch (NullPointerException e) {
 			System.out.println ("got null pointer");
 		}
 		try {
-			________________ ;
+			k[2]= new Integer(1) ;
 
 		} catch (ArrayStoreException e) {
 			System.out.println ("got illegal array store");
 		}
 		try {
-			________________ ;
+			System.out.println((String) obj);
+
 
 		} catch (ClassCastException e) {
 			System.out.println ("got illegal class cast");
